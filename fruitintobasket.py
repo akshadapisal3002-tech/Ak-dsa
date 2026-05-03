@@ -15,8 +15,8 @@ class Solution:
                 if basket[fruits[low]]==0:
                     del basket[fruits[low]]
                 low+=1
-            if len(basket)==2:
-                max_len= max(max_len,high-low+1)
+            
+            max_len= max(max_len,high-low+1)
         return max_len
 
 
