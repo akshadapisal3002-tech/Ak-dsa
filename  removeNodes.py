@@ -5,10 +5,6 @@
 #         self.next = next
 class Solution(object):
     def removeNodes(self, head):
-        """
-        :type head: Optional[ListNode]
-        :rtype: Optional[ListNode]
-        """
         prve = None
         curr = head
         while curr:
