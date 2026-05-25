@@ -1,5 +1,5 @@
 def palindrome(s,low,high):
-    length = low - high +1
+    length = high-low +1
 
     if length == 0 or length == 1:
         return True
