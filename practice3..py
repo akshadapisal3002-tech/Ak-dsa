@@ -1,8 +1,8 @@
 class solution:
     def merge(self, num1:List[int],m:int,num2 :List[int],n:int):
-        i = n - 1
-        j = m - 1
-        k = m-n+1
+        i = m - 1
+        j = n - 1
+        k = m+n-1
 
         while i >= 0 and j >= 0:
             if num1[i] >= num2[j]:
