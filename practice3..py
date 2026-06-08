@@ -12,7 +12,7 @@ class solution:
                 num1[k] = num2[j]
                 j-=1
             k -= 1
-        while j>= 0:
+        while j >= 0:
             num1[k] = num2[j]
             j-=1
             k -= 1
