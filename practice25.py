@@ -12,7 +12,7 @@ class Solution:
             next_node = curr.next
             curr.next= prev
             prev =curr
-            curr = curr.next
+            curr = next_node
 
         left = head
         right = prev
