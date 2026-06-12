@@ -13,5 +13,5 @@ class Solution:
             negative_sum = max(negative_sum,nums)
             best_negative = max(best_negative,negative_sum)
 
-            ans = max(best_positive,best_negative)
+            ans = max(abs(best_positive),abs(best_negative))
         return ans
