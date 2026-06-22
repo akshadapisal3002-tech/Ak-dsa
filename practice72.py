@@ -5,7 +5,7 @@ class Solution:
         freq = Counter(nums)
         heap = []
         for num,Count in freq.items():
-            heapq.heappush(heap(Count,num))
+            heapq.heappush(heap,(Count,num))
             if len(heap)> k:
                 heapq.heappop(heap)
-        return (nums for Count , num in heap)
+        return [num for Count , num in heap]
