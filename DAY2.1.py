@@ -17,5 +17,20 @@ def rotate_kTimes(arr,k):
 
     return temp
 
+
+def reverse(arr,left,right):
+    while  left < right:
+        arr[left],arr[right]= arr[right],arr[left]
+        left+=1
+        right -=1
+
+def rotation(arr,k):
+    n = len(arr)
+    k = k % n
+    reverse(arr,0,n-1)
+    reverse(arr,0,k-1)
+    reverse(arr,0,n-1)
+    return arr
+
 arr=[1,2,3,4,5,6,7]
 print(rotate_kTimes(arr,3))
