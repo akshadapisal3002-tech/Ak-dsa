@@ -12,4 +12,4 @@ class Solution():
                minimun= arr[i]
 
 sol =Solution()
-print(sol.Min_Max[1,2,3,4,5,6,])
+print(sol.Min_Max([1,2,3,4,5,6,7]))
